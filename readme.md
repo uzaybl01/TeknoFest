@@ -1,2 +1,2 @@
 ## Siteye Yönlendir.
-[Site](https://uzaybl01.github.io/TeknoFest/src/pages/index.html)
+Redirect şuan mevcut değil ama bu siteyi girebilirsin : https://uzaybl01.github.io/TeknoFest/src/pages/index.html
