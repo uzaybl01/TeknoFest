@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Yönlendirme Sistemi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Public+Sans:wght@300&family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        body {
+font-family: 'Open Sans', sans-serif;
+font-family: 'Public Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-size: large;
+        }
+    </style>
+    <h1> Yönlendirme 5 saniye içinde başlayacak. </h1>
+    <p id="ip" ></p>
+    <p id="browser"></p>
+    <p id="os"></p>
+    <script>
+       // Toggle
+
+               // İP
+               $.getJSON("https://api.ipify.org/?format=json", function(e) {$("#ip").text(e.ip)});
+       // Browser
+       if($("#browser").text(window.navigator.userAgent == "Chrome")) {
+           $("#browser").text("Tarayıcı : Chrome [ Chromium ]")
+       }
+       // OS
+       if($("#os").text("NT")) {
+           $("#os").text("İşletim Sistemi : Windows ")
+       } else {
+           $("#os").text("İşletim Sistemi : Unix-Benzer")
+       }
+       setTimeout(function(){location.href="https://uzaybl01.github.io/TeknoFest/src/pages/index.html"} , 5000);
+    </script>
+</body>
+</html>
