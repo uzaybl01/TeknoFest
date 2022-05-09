@@ -1,2 +1,2 @@
 ## Siteye Yönlendir.
-[Site](https://github.com/uzaybl01/TeknoFest/blob/main/src/pages/index.html)
+[Site](https://uzaybl01.github.io/TeknoFest/src/pages/index.html)
